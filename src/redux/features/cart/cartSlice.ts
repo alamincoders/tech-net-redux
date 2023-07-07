@@ -1,5 +1,5 @@
-import { IProduct } from '@/types/globalTypes';
 import { createSlice } from '@reduxjs/toolkit';
+import { IProduct } from '@/types/globalTypes';
 
 interface ICart {
   products: IProduct[];
@@ -15,4 +15,4 @@ const cartSlice = createSlice({
   reducers: {},
 });
 
-export default cartSlice.reducer; 
+export default cartSlice.reducer;
