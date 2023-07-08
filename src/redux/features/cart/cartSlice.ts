@@ -1,5 +1,5 @@
-import { createSlice } from '@reduxjs/toolkit';
 import { IProduct } from '@/types/globalTypes';
+import { createSlice } from '@reduxjs/toolkit';
 
 interface ICart {
   products: IProduct[];
