@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import {
   Sheet,
   SheetContent,
@@ -20,13 +21,8 @@ import {
 } from '@/redux/features/cart/cartSlice';
 
 export default function Cart() {
-  const { products } = useAppSelector((state) => state.cart);
+  const { products, total } = useAppSelector((state) => state.cart);
   const dispatch = useAppDispatch();
-
-  //! Dummy data
-  const total = 0;
-
-  //! **
 
   return (
     <Sheet>
