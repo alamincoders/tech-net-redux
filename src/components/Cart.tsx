@@ -12,12 +12,12 @@ import {
   HiOutlineTrash,
 } from 'react-icons/hi';
 import { Button } from './ui/button';
-import { IProduct } from '@/types/globalTypes';
+import { useAppSelector } from '@/redux/hooks';
 
 export default function Cart() {
-  //! Dummy data
+  const { products } = useAppSelector((state) => state.cart);
 
-  const products: IProduct[] = [];
+  //! Dummy data
   const total = 0;
 
   //! **
